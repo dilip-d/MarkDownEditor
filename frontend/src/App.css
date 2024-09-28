@@ -15,6 +15,7 @@
   background-color: #555151;
   border-radius: 20px;
   font-style: italic;
+  padding: 5px 10px;
 }
 
 .markdown-editor {
@@ -40,6 +41,9 @@
 }
 
 @media (max-width: 768px) {
+  .heading {
+    font-size: 25px;
+  }
   .markdown-editor {
     font-size: 14px;
     height: 150px;
@@ -51,6 +55,10 @@
 }
 
 @media (max-width: 480px) {
+  .heading {
+    font-size: 21px;
+  }
+
   .markdown-editor {
     font-size: 12px;
     height: 120px;
