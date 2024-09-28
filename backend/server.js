@@ -3,7 +3,11 @@ import cors from "cors";
 import { marked } from "marked";
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+  })
+);
 app.use(express.json());
 
 app.post("/convert", (req, res) => {
